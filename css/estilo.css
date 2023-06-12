@@ -1,0 +1,62 @@
+body {
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgb(222, 93, 93);
+}
+
+.main-title {
+
+    padding: 1em;
+    text-align:left;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 80;
+    font-stretch:ultra-condensed;
+    font-size: 5em;
+    background-image: url("/component_cli/src/assets/My\ project.jpg");
+    color: rgb(97, 39, 205);
+}
+
+img {
+    max-width:max-content;
+}
+
+.img-cropped {
+    width: 220px;
+    height: 150px;
+}
+
+.card {
+      min-width: 250px;
+      padding: auto;
+      margin: 10px 10px;
+      font-size: large;
+      color:rgb(59, 28, 213);
+      border-color:palegreen;
+      border-style: solid;
+      border-width: 1px;
+      max-width: 220px;
+      background-color: whitesmoke !important;
+      transition: 0.7s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 10px 0 rgba(11, 229, 98, 0.2);
+  }
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+        align-content: center;
+        flex-direction:column;
+        columns: 4;
+    }
+}
+
+@media (min-width: 770px) {
+    .container {
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        columns: 12;
+    }
+}
